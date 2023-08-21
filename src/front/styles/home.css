@@ -1,7 +1,140 @@
-/*
-    home.css: This website contains selectors only used in home.css
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+body {
+    background: linear-gradient(to top, #eceda8 0%, #fed6e3 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0.95;
+}
+
+form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 5%;
+    background: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+
+form .con {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+header {
+    margin: 2% auto 1% auto;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: #3e403f;
+}
+
+header p {
+    letter-spacing: 0.05em;
+}
+
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 15px 9px 17px 9px;
+    border-radius: 5px 0px 0px 5px;
+    margin: 5.9px 0 0 0;
+
+}
+
+#eye {
+    background: #fff;
+    color: #333;
+    margin: 12px;
+    margin-left: -20px;
+    padding: 15px 9px 19px 0px;
+    border-radius: 0px 5px 5px 0px;
+    float: right;
+    position: relative;
+    right: 1%;
+    top: -0.2%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.form-input {
+    width: 240px;
+    height: 50px;
+    margin-top: 4%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+}
+
+#txt-input {
+    width: 250px;
+}
+
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #252537;
+    width: 280px;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    letter-spacing: 0.05em;
+}
+
+.submits {
+    width: auto;
+    margin: 25% 0;
+    display: inline-block;
+    float: left;
+}
+
+.frgt-pass {
+    background: transparent;
+}
+
+.sign-up {
+    background: #B8F2E6;
+}
+
+button:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
